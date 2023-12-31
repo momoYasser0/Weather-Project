@@ -1,0 +1,273 @@
+:root {
+    --main-color: #009ad8;
+}
+
+@media screen and(max-width:767px) {
+    html {
+        font-size: 10px;
+    }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+}
+
+
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: #1e202b;
+}
+
+/* ===============>Start NavBar<=============== */
+.navbar {
+    padding: 3.125rem 0;
+}
+
+nav .navbar-brand {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+nav .navbar-brand img {
+    width: 60px;
+    margin-right: .9375rem;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    background-size: 100%;
+    height: auto;
+    display: block;
+}
+
+.navbar-toggler-icon i {
+    color: var(--main-color);
+}
+
+nav .navbar-collapse {
+    text-align: center;
+}
+
+
+
+nav .navbar-brand .logo p {
+    font-size: .625rem;
+    color: #bfc1c8;
+    margin-bottom: 0;
+}
+
+nav .navbar-nav .nav-item {
+    margin-inline: .625rem;
+}
+
+nav .navbar-nav .nav-link {
+    color: #fff;
+    padding: .3125rem 0;
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    nav .navbar-nav .nav-link.active,
+    nav .navbar-nav .nav-link.show {
+        color: var(--main-color);
+        border-color: var(--main-color);
+    }
+
+    nav .navbar-nav .nav-link:hover {
+        color: var(--main-color);
+        border-color: var(--main-color);
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+    nav .navbar-collapse li {
+        padding: .625rem;
+    }
+
+    nav .navbar-collapse li:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+/* ===============>End NavBar<=============== */
+
+.bg-header {
+    background-image: url("../imgs/banner.png");
+    background-size: cover;
+    padding: 4.375rem 0;
+    min-height: 21.875rem;
+}
+
+.bg-header .find,
+footer .footer-content {
+    position: relative;
+}
+
+.bg-header .find button,
+footer .footer-content button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 34px;
+    padding: .625rem 2.1875rem;
+    font-size: 15px;
+}
+
+.form-control {
+    padding: .875rem;
+    border-radius: 2.1875rem;
+    background-color: #1e202b;
+    color: #fff;
+    border: none;
+}
+
+.form-control::placeholder {
+    color: #757575;
+    font-size: .9375rem;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--main-color);
+    --bs-btn-hover-border-color: var(--main-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #1e202b;
+    border: transparent;
+    color: #fff;
+}
+
+/* ^===============>Start Forcast<==================== */
+.forcast-table {
+    margin-top: -150px;
+}
+
+.forcast-table .forcast-container {
+    background-color: #323544;
+    border-radius: .625rem;
+}
+
+.forcast-table .today.forcast .location {
+    font-weight: 400;
+}
+
+.forcast-table .today.forcast .degree {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.forcast-table .today.forcast .degree .num {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.forcast-table .forcast:nth-child(2) {
+    background-color: #262936
+}
+
+.forcast-table .forcast-header {
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    padding: .625rem;
+}
+
+.forcast-table .forcast .degree {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.forcast-icon {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.forcast-table .forcast small {
+    font-size: 1.125rem;
+}
+
+.forcast-table .forcast-content .weather-condition {
+    margin: 1.25rem 0;
+    color: #009ad8;
+}
+
+.forcast-table .today.forcast span {
+    margin-right: 1.25rem;
+}
+
+.forcast-table .today.forcast span img {
+    margin-right: .625rem;
+}
+
+/* ^===============>End Forcast<==================== */
+
+/*& ==========>Start Footer<================== */
+footer {
+    padding: 70px 0;
+    background-color: #262936;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+footer .social-links li a {
+    font-size: 20px;
+    background-color: #1E202B;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer .social-links li:hover a {
+    color: #fff;
+}
+
+/*& ===========> End Footer <=================*/
